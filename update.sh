@@ -1,9 +1,11 @@
 #!/bin/bash
 
+# Author: Malthe Gram
+# https://github.com/MaltheGram
+
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 declare WL="git@github.com:BenjaminMedia/brands-whitelabel.git"
-
 
 
 # TODO: Check for OS and install node depending on OS
@@ -14,7 +16,7 @@ if [[ "$OSTYPE" != *"darwin"* ]]; then
 fi
 
 cd /Users/${USER}/Desktop/
-pwd
+
 
 # Check if reposDestination is not an empty input
 # If it's empty make a GitHub folder on the desktop and work on that

@@ -1,9 +1,10 @@
-DIR="GitHub"
-if [ -d "$DIR" ]; then
-  ### Take action if $DIR exists ###
-  echo "Installing config files in ${DIR}..."
+
+echo "Give input"
+
+read test
+
+if [[ ${#test} -lt 2  ]]; then
+  echo "Input is empty"
 else
-  ###  Control will jump here if $DIR does NOT exists ###
-  echo "Error: ${DIR} not found. Can not continue."
-  exit 1
+  echo "Input is not empty"
 fi
